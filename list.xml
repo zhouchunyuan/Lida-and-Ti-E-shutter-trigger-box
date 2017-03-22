@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>C:\Users\f3412\Desktop\list\list.sch</source>
+    <date>18/12/2016 16:51:21</date>
+    <tool>Eeschema 4.0.4-stable</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>list.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="U1">
+      <value>74HC04</value>
+      <footprint>SMD_Packages:SOIC-14_N</footprint>
+      <libsource lib="74xx" part="74HC04"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5855FB80</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="74xx" part="74HCT04">
+      <aliases>
+        <alias>74HC14</alias>
+        <alias>74HC04</alias>
+        <alias>74LS14</alias>
+      </aliases>
+      <description>Hex Inverseur</description>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">74HCT04</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="input"/>
+        <pin num="2" name="~" type="output"/>
+        <pin num="3" name="~" type="input"/>
+        <pin num="4" name="~" type="output"/>
+        <pin num="5" name="~" type="input"/>
+        <pin num="6" name="~" type="output"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="~" type="output"/>
+        <pin num="9" name="~" type="input"/>
+        <pin num="10" name="~" type="output"/>
+        <pin num="11" name="~" type="input"/>
+        <pin num="12" name="~" type="output"/>
+        <pin num="13" name="~" type="input"/>
+        <pin num="14" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="74xx">
+      <uri>D:\Program Files\KiCad\share\kicad\library\74xx.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="GND">
+      <node ref="U1" pin="7"/>
+    </net>
+    <net code="2" name="VCC">
+      <node ref="U1" pin="14"/>
+    </net>
+    <net code="3" name="Net-(U1-Pad1)">
+      <node ref="U1" pin="1"/>
+    </net>
+    <net code="4" name="Net-(U1-Pad2)">
+      <node ref="U1" pin="2"/>
+    </net>
+  </nets>
+</export>
